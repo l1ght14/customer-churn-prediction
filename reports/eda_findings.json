@@ -1,0 +1,46 @@
+{
+  "Contract": {
+    "Month-to-month": 0.4271,
+    "One year": 0.1128,
+    "Two year": 0.0285
+  },
+  "PaymentMethod": {
+    "Electronic check": 0.4529,
+    "Mailed check": 0.192,
+    "Bank transfer (automatic)": 0.1673,
+    "Credit card (automatic)": 0.1525
+  },
+  "InternetService": {
+    "Fiber optic": 0.4189,
+    "DSL": 0.19,
+    "No": 0.0743
+  },
+  "PaperlessBilling": {
+    "Yes": 0.3359,
+    "No": 0.1638
+  },
+  "Dependents": {
+    "No": 0.3128,
+    "Yes": 0.1553
+  },
+  "SeniorCitizen": {
+    "Yes": 0.4168,
+    "No": 0.2365
+  },
+  "tenure_band": {
+    "0-6 mo": 0.5333,
+    "7-12 mo": 0.3589,
+    "13-24 mo": 0.2871,
+    "25-48 mo": 0.2039,
+    "49+ mo": 0.0951
+  },
+  "concentration": {
+    "churned_customers": 1869,
+    "total_monthly_rev_at_risk": 139130.85,
+    "top_10.0pct_of_churned_customers": 186,
+    "top_10.0pct_rev": 19813.05,
+    "top_10.0pct_rev_share": 0.1424,
+    "avg_monthly_charge_churned": 74.4413,
+    "avg_monthly_charge_retained": 61.3074
+  }
+}

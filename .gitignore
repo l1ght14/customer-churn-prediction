@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+*.log
+.venv/
+
+# Raw third-party dataset: 1 MB, fetched by `python -m src.run_all`.
+# The fetch step and its URL live in src/run_all.py:fetch_raw_data.
+data/raw/*.csv
+
+# The ranked customer list IS a deliverable and is committed so a reviewer can inspect
+# it without running anything.
+
+# models/ used to hold a pickled estimator. Nothing read it, it was 5 MB, and it could not
+# be committed - so the pipeline no longer writes one. Both stages refit from source,
+# which means a clean checkout produces identical numbers by the identical code path.
+models/
+
+.DS_Store

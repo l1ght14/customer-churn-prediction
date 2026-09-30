@@ -1,0 +1,6 @@
+# Only what is actually imported in src/ and tests/.
+# scipy, seaborn and statsmodels were previously pinned here but never used.
+pandas==3.0.6
+numpy==2.4.1
+scikit-learn==1.9.1
+matplotlib==3.11.2

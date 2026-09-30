@@ -1,0 +1,172 @@
+{
+  "model": "random_forest",
+  "holdout_report_at_0.5": {
+    "threshold": 0.5,
+    "true_positives": 298,
+    "false_positives": 289,
+    "false_negatives": 76,
+    "true_negatives": 744,
+    "precision": 0.5077,
+    "recall": 0.7968,
+    "specificity": 0.7202,
+    "f1": 0.6202,
+    "f2": 0.7153,
+    "accuracy": 0.7406,
+    "roc_auc": 0.8389,
+    "pr_auc": 0.6421
+  },
+  "baseline_pr_auc": 0.2658,
+  "threshold_sweep": [
+    {
+      "target_share": 0.05,
+      "threshold_from_train": 0.8612,
+      "customers_targeted": 78,
+      "churners_caught": 63,
+      "recall": 0.1684,
+      "precision": 0.8077,
+      "f2": 0.2001
+    },
+    {
+      "target_share": 0.1,
+      "threshold_from_train": 0.8044,
+      "customers_targeted": 145,
+      "churners_caught": 107,
+      "recall": 0.2861,
+      "precision": 0.7379,
+      "f2": 0.326
+    },
+    {
+      "target_share": 0.15,
+      "threshold_from_train": 0.7546,
+      "customers_targeted": 218,
+      "churners_caught": 150,
+      "recall": 0.4011,
+      "precision": 0.6881,
+      "f2": 0.4376
+    },
+    {
+      "target_share": 0.2,
+      "threshold_from_train": 0.711,
+      "customers_targeted": 285,
+      "churners_caught": 182,
+      "recall": 0.4866,
+      "precision": 0.6386,
+      "f2": 0.5109
+    },
+    {
+      "target_share": 0.3,
+      "threshold_from_train": 0.5999,
+      "customers_targeted": 441,
+      "churners_caught": 258,
+      "recall": 0.6898,
+      "precision": 0.585,
+      "f2": 0.666
+    }
+  ],
+  "lift_table": [
+    {
+      "decile": 1,
+      "n_customers": 140,
+      "share_of_customers": 0.0995,
+      "churners": 105,
+      "churn_rate_in_decile": 0.75,
+      "cum_gain": 0.2807,
+      "lift": 2.8215
+    },
+    {
+      "decile": 2,
+      "n_customers": 141,
+      "share_of_customers": 0.1002,
+      "churners": 75,
+      "churn_rate_in_decile": 0.5319,
+      "cum_gain": 0.4813,
+      "lift": 2.0011
+    },
+    {
+      "decile": 3,
+      "n_customers": 141,
+      "share_of_customers": 0.1002,
+      "churners": 70,
+      "churn_rate_in_decile": 0.4965,
+      "cum_gain": 0.6684,
+      "lift": 1.8677
+    },
+    {
+      "decile": 4,
+      "n_customers": 140,
+      "share_of_customers": 0.0995,
+      "churners": 46,
+      "churn_rate_in_decile": 0.3286,
+      "cum_gain": 0.7914,
+      "lift": 1.2361
+    },
+    {
+      "decile": 5,
+      "n_customers": 141,
+      "share_of_customers": 0.1002,
+      "churners": 24,
+      "churn_rate_in_decile": 0.1702,
+      "cum_gain": 0.8556,
+      "lift": 0.6403
+    },
+    {
+      "decile": 6,
+      "n_customers": 141,
+      "share_of_customers": 0.1002,
+      "churners": 26,
+      "churn_rate_in_decile": 0.1844,
+      "cum_gain": 0.9251,
+      "lift": 0.6937
+    },
+    {
+      "decile": 7,
+      "n_customers": 140,
+      "share_of_customers": 0.0995,
+      "churners": 14,
+      "churn_rate_in_decile": 0.1,
+      "cum_gain": 0.9626,
+      "lift": 0.3762
+    },
+    {
+      "decile": 8,
+      "n_customers": 141,
+      "share_of_customers": 0.1002,
+      "churners": 11,
+      "churn_rate_in_decile": 0.078,
+      "cum_gain": 0.992,
+      "lift": 0.2935
+    },
+    {
+      "decile": 9,
+      "n_customers": 141,
+      "share_of_customers": 0.1002,
+      "churners": 1,
+      "churn_rate_in_decile": 0.0071,
+      "cum_gain": 0.9947,
+      "lift": 0.0267
+    },
+    {
+      "decile": 10,
+      "n_customers": 141,
+      "share_of_customers": 0.1002,
+      "churners": 2,
+      "churn_rate_in_decile": 0.0142,
+      "cum_gain": 1.0,
+      "lift": 0.0534
+    }
+  ],
+  "backtest_summary_top_10pct": {
+    "customers_scored": 7032,
+    "customers_targeted": 703,
+    "targeted_share_of_base": 0.1,
+    "total_churners": 1869,
+    "churners_caught": 534,
+    "churners_caught_not_targeted": 1335,
+    "capture_rate": 0.2857,
+    "lift_vs_random": 2.858,
+    "monthly_rev_in_target": 57898.85,
+    "monthly_rev_at_risk_in_target": 43980.1,
+    "hit_rate": 0.7596,
+    "baseline_hit_rate": 0.2658
+  }
+}
