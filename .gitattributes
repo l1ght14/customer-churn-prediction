@@ -1,0 +1,8 @@
+# Normalise line endings so a clone on any OS produces an identical working tree and diffs
+# stay clean. Without this, Windows checkouts rewrite every file to CRLF and Linux contributors
+# see the whole project as changed.
+* text=auto eol=lf
+
+# Artefacts are byte-stable and are compared as bytes by the test suite; git must not touch them.
+data/processed/*.csv -text
+reports/figures/*.png -text
