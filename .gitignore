@@ -16,3 +16,6 @@ data/raw/*.csv
 models/
 
 .DS_Store
+
+# Private interview preparation - study notes, not part of the public project.
+docs/
