@@ -127,7 +127,7 @@ the 1,407 holdout labels influence which model wins, which makes the reported ho
 score an overestimate.
 
 Worth being precise here, because the honest finding is less dramatic than the folklore.
-In the current configuration the scope does **not** change the winner: full-matrix CV also
+In the current configuration, the scope does **not** change the winner: full-matrix CV also
 ranks random forest first (0.6662 vs gradient boosting 0.6636). But an earlier
 configuration *did* flip it, and that is the real point — whether a leak changes the
 argmax is not something you can know in advance, which is exactly why you close it rather
@@ -170,14 +170,14 @@ to `drop="first"` gives **32 columns with 8 dependent directions** — same data
 engineered features, only the encoder changed.
 
 **Why that matters for model choice, not accuracy.** Trees split on one feature at a time
-and both encodings expose the same cut points, so gradient boosting and the forests are
+, and both encodings expose the same cut points, so gradient boosting and the forests are
 unaffected. Logistic regression is not: under exact collinearity L2 has no unique minimum
 and spreads weight arbitrarily across duplicate columns, so no individual coefficient is
 readable. That is why the logistic-regression row is a reference point, not the
 recommendation.
 
 **Selection metric is PR-AUC, not accuracy and not ROC-AUC.** Accuracy is useless here:
-"predict nobody churns" scores 73.4%. ROC-AUC is better but still the wrong yardstick, and
+"predict nobody churns" scores 73.4%. ROC-AUC is better, but still the wrong yardstick, and
 the reason is worth stating precisely because the usual one is wrong — it is *not* that a
 zero-recall model scores well. It does not: a model that misses every churner has ROC-AUC
 exactly 0.5, and this project's own dummy baseline is recorded at 0.5000 with recall
